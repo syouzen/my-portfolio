@@ -2,7 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 import { sans, serif, serif_en } from "./font";
-import { MoonIcon } from "@radix-ui/react-icons";
+import Header from "./_components/header";
+import ThemeProviders from "./_providers/theme";
 
 const contents = {
   title: "최승연 | 포트폴리오",
@@ -39,38 +40,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${sans.variable} ${serif.variable} ${serif_en.variable}`}>
-      <body className="bg-gray-100">
-        <header className="sticky top-0 bg-opacity-90 backdrop-blur-lg">
-          <nav className="container max-w-4xl mx-auto px-6 py-3 flex justify-between items-center">
-            <div className="flex items-center space-x-4">
-              <h1 className="text-2xl font-bold">최승연</h1>
-              <p className="text-sm text-gray-500">프론트엔드 개발자</p>
-            </div>
-
-            <div className="flex items-center gap-x-6">
-              <a href="#home" className="hover:text-blue-200 transition-colors">
-                Home
-              </a>
-              <a href="#introduction" className="hover:text-blue-200 transition-colors">
-                Introduction
-              </a>
-              <a href="#skills" className="hover:text-blue-200 transition-colors">
-                Skills
-              </a>
-              <a href="#work-experience" className="hover:text-blue-200 transition-colors">
-                Work Experience
-              </a>
-              <a href="#side-projects" className="hover:text-blue-200 transition-colors">
-                Side Projects
-              </a>
-              <button className="p-2 w-10 h-10 rounded-full bg-gray-200 flex justify-center items-center focus:outline-none focus:ring focus:ring-blue-500">
-                <MoonIcon className="text-black" />
-              </button>
-            </div>
-          </nav>
-        </header>
-        <main className="container max-w-4xl mx-auto px-6 py-12 bg-gray-100">{children}</main>
-        <footer className="w-full h-20 bg-blue-500"></footer>
+      <body>
+        <ThemeProviders>
+          <Header />
+          <main className="container max-w-4xl mx-auto px-6 py-12 bg-gray-100">{children}</main>
+          <footer className="w-full h-20 bg-blue-500"></footer>
+        </ThemeProviders>
       </body>
     </html>
   );
