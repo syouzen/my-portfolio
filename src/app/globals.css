@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 :root {
+  --font-sans: "Noto Sans KR", sans-serif;
+  --font-serif: "Nanum Myeongjo", serif;
+  --font-serif-en: "Cinzel", serif;
+
   user-select: none;
+}
+
+body {
+  font-family: var(--font-sans);
 }
