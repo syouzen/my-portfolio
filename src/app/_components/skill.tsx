@@ -15,7 +15,7 @@ import spring from "../_assets/spring.webp";
 import jpa from "../_assets/jpa.webp";
 import mysql from "../_assets/mysql.png";
 
-const Introduction = () => {
+const Skill = () => {
   const skills = [
     { name: "C++", image: cpp },
     { name: "React", image: react },
@@ -56,4 +56,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default Skill;
