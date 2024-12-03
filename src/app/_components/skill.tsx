@@ -36,7 +36,7 @@ const Skill = () => {
 
   return (
     <div id="skill" className="flex flex-col w-full gap-y-6">
-      <h1 className="text-2xl font-bold mb-4 text-black dark:text-gray-200">기술스택</h1>
+      <h1 className="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-200">기술스택</h1>
 
       <div className="grid grid-cols-4 gap-4 gap-y-8">
         {skills.map((skill, index) => (

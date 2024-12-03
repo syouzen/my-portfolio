@@ -14,7 +14,7 @@ export default function ThemeButton() {
           setTheme(theme === "dark" ? "light" : "dark");
         }}
       >
-        {theme === "dark" ? <SunIcon className="text-black" /> : <MoonIcon className="text-black" />}
+        {theme === "dark" ? <SunIcon className="text-gray-700" /> : <MoonIcon className="text-gray-700" />}
       </button>
     </>
   );

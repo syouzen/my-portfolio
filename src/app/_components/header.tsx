@@ -19,7 +19,7 @@ const Header = () => {
     <header className="sticky top-0 bg-opacity-90 backdrop-blur-lg">
       <nav className="container max-w-4xl mx-auto px-6 py-3 flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <h1 className="text-2xl font-bold">최승연</h1>
+          <h1 className="text-2xl font-bold text-gray-700 dark:text-gray-200">최승연</h1>
           <p className="text-sm text-gray-500">소통하는 프론트엔드 개발자</p>
         </div>
 
