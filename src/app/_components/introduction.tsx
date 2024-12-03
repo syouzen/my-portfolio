@@ -17,7 +17,7 @@ const Introduction = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-y-4">
+      <div className="mt-8 flex flex-col gap-y-4 text-sm font-light text-gray-300">
         <p>안녕하세요! 소통하는 개발자 ‘최승연’입니다.</p>
         <p>
           저는 시스템 개발부터 프론트 엔드까지 폭넓게 일해 왔습니다. 때로는 사이드 프로젝트에 참여하며 다양한 경험을 쌓았습니다. 그렇기에 어디에서 무엇을 하던
