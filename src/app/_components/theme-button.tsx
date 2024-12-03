@@ -9,7 +9,7 @@ export default function ThemeButton() {
   return (
     <>
       <button
-        className="p-2 w-10 h-10 rounded-full bg-gray-200 flex justify-center items-center focus:outline-none focus:ring focus:ring-blue-500 transition"
+        className="w-8 h-8 rounded-full bg-gray-200 flex justify-center items-center focus:outline-none focus:ring focus:ring-blue-500 transition"
         onClick={() => {
           setTheme(theme === "dark" ? "light" : "dark");
         }}
