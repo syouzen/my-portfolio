@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import profile from "../_assets/profile.png";
 import Link from "next/link";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, LinkedInLogoIcon, NotionLogoIcon } from "@radix-ui/react-icons";
 
 const Introduction = () => {
   return (
@@ -31,12 +31,15 @@ const Introduction = () => {
             </Link>
           </p>
           <p>Address. 서울시 송파구</p>
-          <div className="mt-2 flex gap-x-2">
-            <Link href="https://github.com/syouzen" className="text-blue-500 underline transition-colors hover:text-blue-600">
+          <div className="mt-2 flex gap-x-4">
+            <Link href="https://github.com/syouzen" className="hover:opacity-70 transition-opacity">
               <GitHubLogoIcon className="w-6 h-6 text-black dark:text-white" />
             </Link>
-            <Link href="https://www.linkedin.com/in/seung-yeon-choi-321595154/" className="text-blue-500 underline transition-colors hover:text-blue-600">
+            <Link href="https://www.linkedin.com/in/seung-yeon-choi-321595154/" className="hover:opacity-70 transition-opacity">
               <LinkedInLogoIcon className="w-6 h-6 text-black dark:text-white" />
+            </Link>
+            <Link href="https://ivory-play-f69.notion.site/Introduction-eec043bd2b254bd6844554515e0310a7" className="hover:opacity-70 transition-opacity">
+              <NotionLogoIcon className="w-6 h-6 text-black dark:text-white" />
             </Link>
           </div>
         </div>
