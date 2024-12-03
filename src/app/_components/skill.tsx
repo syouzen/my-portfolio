@@ -46,7 +46,7 @@ const Skill = () => {
               alt={skill.name}
               width={128}
               height={128}
-              className="w-[128px] h-[128px] bg-white border-2 border-gray-200 dark:border-white dark:bg-white rounded-3xl object-contain"
+              className="w-[128px] aspect-square bg-white border-2 border-gray-200 dark:border-white dark:bg-white rounded-3xl object-contain"
             />
             <p>{skill.name}</p>
           </div>
