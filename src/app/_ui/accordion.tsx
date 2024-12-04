@@ -48,8 +48,8 @@ const AccordionContent = React.forwardRef<
     className={cn(
       'ml-6',
       'transition-all overflow-hidden',
-      //   'data-[state=closed]:animate-slide-up',
-      //   'data-[state=open]:animate-slide-down',
+      'data-[state=closed]:animate-slide-up',
+      'data-[state=open]:animate-slide-down',
       className
     )}
     {...props}
