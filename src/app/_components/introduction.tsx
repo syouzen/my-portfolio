@@ -38,6 +38,7 @@ const Introduction = () => {
             </Link>
           </p>
           <p>Address. 서울시 송파구</p>
+          <p>Edu. 연세대학교 (서울), 컴퓨터과학과 학사 졸업</p>
           <div className="mt-2 flex gap-x-4">
             <Link
               href="https://github.com/syouzen"
