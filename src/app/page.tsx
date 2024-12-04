@@ -1,6 +1,6 @@
-import Introduction from "./_components/introduction";
-import Skill from "./_components/skill";
-import Work from "./_components/work";
+import Introduction from './_components/introduction';
+import Skill from './_components/skill';
+import Work from './_components/work';
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from 'next-themes';
 
 interface ThemePropsInterface {
   children?: JSX.Element | Array<JSX.Element> | React.ReactNode;

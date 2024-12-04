@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
-import { useTheme } from "next-themes";
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
+import { useTheme } from 'next-themes';
 
 export default function ThemeButton() {
   const { theme, setTheme } = useTheme();
@@ -11,10 +11,14 @@ export default function ThemeButton() {
       <button
         className="w-8 h-8 rounded-full bg-gray-200 flex justify-center items-center focus:outline-none focus:ring focus:ring-blue-500 transition"
         onClick={() => {
-          setTheme(theme === "dark" ? "light" : "dark");
+          setTheme(theme === 'dark' ? 'light' : 'dark');
         }}
       >
-        {theme === "dark" ? <SunIcon className="text-gray-700" /> : <MoonIcon className="text-gray-700" />}
+        {theme === 'dark' ? (
+          <SunIcon className="text-gray-700" />
+        ) : (
+          <MoonIcon className="text-gray-700" />
+        )}
       </button>
     </>
   );
