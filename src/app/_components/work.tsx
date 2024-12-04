@@ -1,9 +1,4 @@
-import {
-  CalendarIcon,
-  CheckIcon,
-  DotFilledIcon,
-  RocketIcon,
-} from '@radix-ui/react-icons';
+import { CalendarIcon, CheckIcon, RocketIcon } from '@radix-ui/react-icons';
 import {
   Accordion,
   AccordionContent,
@@ -178,10 +173,43 @@ const Work = () => {
                       인증/인가
                     </p>
                     <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 pl-6">
-                      <DotFilledIcon />
                       인증/인가는 Spring Security를 통해 구현했습니다. 인가,
                       인증 로직을 구분했으며 Role에 따른 접근 가능한 API를
                       선별했습니다.
+                    </p>
+                    <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 pl-6">
+                      인증 과정을 Custom 하기 위해
+                      AbstractAuthenticationProcessingFilter를 직접 상속해
+                      구현했습니다. 인증 과정에는 중복 로그인 방지, 패스워드
+                      만료, 로그인 시도 횟수, 계정 잠금 기능이 추가 관리됩니다.
+                    </p>
+                    <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 pl-6">
+                      중복로그인을 방지하는 로직을 구현했습니다. 로그인 시
+                      Session Registry에 직접 접근하여 현재 로그인 된 사용자인지
+                      여부를 확인합니다. 만약 로그인 된 사용자일 경우 로그인을
+                      방지하나 강제 로그인 시 로그인이 가능합니다.
+                    </p>
+                    <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 pl-6">
+                      인가 시 사용자의 IP가 인증된 IP인지 검증하는 Filter를
+                      구현했습니다. 인증되지 않은 IP의 경우 접근 차단이
+                      이루어집니다.
+                    </p>
+
+                    <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 mt-2">
+                      <RocketIcon />
+                      SSE 실시간 알림 기능 개발
+                    </p>
+                    <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 pl-6">
+                      실시간 알림 기능을 위해 SSE를 사용했습니다.
+                    </p>
+                    <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 pl-6">
+                      프론트엔드에서 직접적으로 서버에게 메세지를 보낼일은
+                      없기에 단방향인 SSE를 적용했습니다.
+                    </p>
+                    <p className="flex items-center gap-x-2 text-sm text-gray-700 dark:text-gray-300 pl-6">
+                      프론트엔드는 서버에 Subscribe API를 보내고 SSE가
+                      연결됩니다. 이를 통해 서버는 프론트엔드에게 실시간 알림을
+                      보낼 수 있습니다.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
