@@ -46,7 +46,7 @@ const AccordionContent = React.forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      'ml-6 h-0',
+      'ml-6',
       'transition-all overflow-hidden',
       //   'data-[state=closed]:animate-slide-up',
       //   'data-[state=open]:animate-slide-down',
