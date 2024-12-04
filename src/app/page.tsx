@@ -1,4 +1,5 @@
 import Introduction from './_components/introduction';
+import Side from './_components/side';
 import Skill from './_components/skill';
 import Work from './_components/work';
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Introduction />
       <Skill />
       <Work />
+      <Side />
     </div>
   );
 }
